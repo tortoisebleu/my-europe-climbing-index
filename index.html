@@ -1,0 +1,149 @@
+<style>
+  /* 全体のコンテナ：max-widthを削除し、横いっぱいに広がるように設定 */
+  .index-container { 
+    font-family: sans-serif; 
+    color: #333; 
+    width: 100%; 
+  }
+  
+  .country-section { margin-bottom: 35px; }
+  
+  /* タイトル：下線デザイン */
+  .country-title { 
+    font-size: 1.25em; 
+    border-bottom: 2px solid #829ebc; 
+    padding-bottom: 6px; 
+    margin-bottom: 8px; 
+    font-weight: bold;
+    color: #225588;
+  }
+  
+  /* 説明文：斜体デザイン */
+  .country-desc { 
+    font-size: 0.9em; 
+    color: #666; 
+    margin-bottom: 15px; 
+    font-style: italic; 
+  }
+  
+  .tag-group { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+  }
+
+  /* タグ：丸みのあるデザイン + 三角形ピクト */
+  .climb-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 16px;
+    background-color: #f0f4f8;
+    border: 1px solid #d1d9e0;
+    border-radius: 20px;
+    color: #225588;
+    text-decoration: none;
+    font-size: 0.85em;
+    transition: all 0.3s ease;
+  }
+
+  /* 三角形ピクトグラム */
+  .climb-tag::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0 4px 6px;
+    border-color: transparent transparent transparent #829ebc;
+    margin-right: 8px;
+    transition: border-color 0.3s ease;
+  }
+
+  /* ホバー時の挙動 */
+  .climb-tag:hover {
+    background-color: #225588;
+    color: #fff !important;
+    border-color: #225588;
+  }
+  .climb-tag:hover::before {
+    border-color: transparent transparent transparent #fff;
+  }
+</style>
+
+<div class="index-container">
+  
+  <div class="country-section">
+    <div class="country-title">🇫🇷 France</div>
+    <div class="country-desc">La diversité infinie : des blocs de grès aux grandes parois calcaires.</div>
+    <div class="tag-group">
+     <a href="https://escalade.amebaownd.com/posts/39344564" class="climb-tag">Fontainebleau</a>
+      <a href="https://escalade.amebaownd.com/posts/57039271" class="climb-tag">Céüse</a>
+      <a href="https://escalade.amebaownd.com/posts/23702919" class="climb-tag">Verdon</a>
+      <a href="https://escalade.amebaownd.com/posts/55568471" class="climb-tag">Calanques</a>
+      <a href="https://escalade.amebaownd.com/posts/37737953" class="climb-tag">Chamonix</a>
+      <a href="https://escalade.amebaownd.com/posts/36726183" class="climb-tag">Écrins</a>
+      <a href="https://escalade.amebaownd.com/posts/35439954" class="climb-tag">Briançon / AILEFROIDE</a>
+      <a href="https://escalade.amebaownd.com/posts/54971002" class="climb-tag">Chambéry & Annecy</a>
+      <a href="https://escalade.amebaownd.com/posts/23856355" class="climb-tag">Vercors / Presles</a>
+      <a href="https://escalade.amebaownd.com/posts/35221757" class="climb-tag">Tour Termier</a>
+      <a href="https://escalade.amebaownd.com/posts/36817039" class="climb-tag">Maurienne</a>
+      <a href="https://escalade.amebaownd.com/posts/33629999" class="climb-tag">Jura</a>
+      <a href="https://escalade.amebaownd.com/posts/33318724" class="climb-tag">Vosges</a>
+    </div>
+  </div>
+
+  <div class="country-section">
+    <div class="country-title">🇨🇭 Suisse</div>
+    <div class="country-desc">La précision et la majesté au cœur des paysages alpins.</div>
+    <div class="tag-group">
+      <a href="https://escalade.amebaownd.com/posts/53351172" class="climb-tag">Oberland Bernois</a>
+      <a href="https://escalade.amebaownd.com/posts/58562442" class="climb-tag">Grindelwald & Saas-Fee</a>
+    </div>
+  </div>
+
+  <div class="country-section">
+    <div class="country-title">🇮🇹 Italie</div>
+    <div class="country-desc">Le caractère et la tradition du granit sauvage et des voies historiques.</div>
+    <div class="tag-group">
+      <a href="https://escalade.amebaownd.com/posts/54970263" class="climb-tag">Valle dell'Orco</a>
+      <a href="https://escalade.amebaownd.com/posts/25706899" class="climb-tag">Finale Ligure</a>
+      <a href="https://escalade.amebaownd.com/posts/55597126" class="climb-tag">Arco</a>
+      <a href="https://escalade.amebaownd.com/posts/58562694" class="climb-tag">Dolomiti</a>
+    </div>
+  </div>
+
+  <div class="country-section">
+    <div class="country-title">🇩🇪 Allemagne</div>
+    <div class="country-desc">La technicité et la forêt : l’art des trous et le charme discret du grès.</div>
+    <div class="tag-group">
+      <a href="https://escalade.amebaownd.com/posts/55591092" class="climb-tag">Frankenjura</a>
+      <a href="https://escalade.amebaownd.com/posts/58565545" class="climb-tag">Battert</a>
+      <a href="https://escalade.amebaownd.com/posts/58565353" class="climb-tag">Pfalz</a>
+    </div>
+  </div>
+
+  <div class="country-section">
+    <div class="country-title">🇬🇷 Grèce</div>
+    <div class="country-desc">Le paradis entre ciel et mer, une grimpe ensoleillée.</div>
+    <div class="tag-group">
+      <a href="https://escalade.amebaownd.com/posts/56229758" class="climb-tag">Kalymnos</a>
+    </div>
+  </div>
+
+  <div class="country-section">
+    <div class="country-title">🇦🇹 Autriche</div>
+    <div class="country-desc">L'esprit du Tyrol et la verticalité des Alpes autrichiennes.</div>
+    <div class="tag-group">
+      <a href="https://escalade.amebaownd.com/posts/58565670" class="climb-tag">Tirol</a>
+    </div>
+  </div>
+
+  <div class="country-section">
+    <div class="country-title">🇱🇺 Luxembourg</div>
+    <div class="country-desc">La parenthèse de grès au cœur d'une nature préservée.</div>
+    <div class="tag-group">
+      <a href="https://escalade.amebaownd.com/posts/57302839" class="climb-tag">Berdorf</a>
+    </div>
+  </div>
+
+</div>
